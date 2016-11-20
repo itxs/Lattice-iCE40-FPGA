@@ -1,0 +1,11 @@
+#--  Synopsys, Inc.
+#--  Version K-2015.09L
+#--  Project file C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_syn.prd
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

@@ -1,0 +1,29 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Nov 19 00:41:36 2016
+#
+
+
+Top view:               top
+Requested Frequency:    167.4 MHz
+Wire load mode:         top
+Paths requested:        5
+from:                   0
+through:                1
+to:                     1
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+
+
+
+Worst From-To Path Information
+*******************************
+
+    No valid timing path found.
+
+
+##### END OF TIMING REPORT #####]
+
+Constraints that could not be applied

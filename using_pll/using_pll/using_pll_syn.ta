@@ -1,0 +1,77 @@
+Synopsys Lattice Technology Mapper, Version maplat, Build 1346R, Built Dec  9 2015 10:24:09
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version K-2015.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+Adding property syn_ta_report_clock_domain_crossing, value 0 to view:work.top(verilog)
+Adding property syn_ta_max_display_worst_paths, value 5 to view:work.top(verilog)
+
+Start Timing Analyst (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 132MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 132MB)
+
+@W: MT420 |Found inferred clock top|clk with period 5.98ns. Please declare a user-defined clock on object "p:clk"
+@N: MT615 |Found clock pll|PLLOUTGLOBAL_derived_clock with period 5.98ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Nov 19 00:41:36 2016
+#
+
+
+Top view:               top
+Requested Frequency:    167.4 MHz
+Wire load mode:         top
+Paths requested:        5
+from:                   0
+through:                1
+to:                     1
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+
+
+
+Worst From-To Path Information
+*******************************
+
+    No valid timing path found.
+
+
+##### END OF TIMING REPORT #####]
+
+Constraints that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 132MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 132MB)
+
+Writing Analyst data base C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll_ta.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 132MB)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 132MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Nov 19 00:41:36 2016
+
+###########################################################]

@@ -1,21 +1,28 @@
-#-- Synopsys, Inc.
-#-- Project file C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_syn.prj
-#project files
+#--  Synopsys, Inc.
+#--  Version K-2015.09L
+#--  Project file C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_syn.prj
 
-add_file -verilog -lib work "../source/top.sv" 
-add_file -verilog -lib work "../source/pll.v" 
+#project files
+add_file -verilog -vlog_std sysv "../source/top.sv"
+add_file -verilog "../source/pll.v"
+
+
+
 #implementation: "using_pll_Implmnt"
 impl -add using_pll_Implmnt -type fpga
 
+#
 #implementation attributes
-set_option -vlog_std v2001
+
+set_option -vlog_std sysv
+set_option -num_startend_points 5
 set_option -project_relative_includes 1
 
 #device options
 set_option -technology SBTiCE40
 set_option -part iCE40HX1K
 set_option -package TQ144
-set_option -speed_grade 
+set_option -speed_grade ""
 set_option -part_companion ""
 
 #compilation/mapping options
@@ -24,20 +31,24 @@ set_option -part_companion ""
 set_option -frequency auto
 set_option -write_verilog 0
 set_option -write_vhdl 0
+set_option -srs_instrumentation 1
 
-# Silicon Blue iCE40
+# Lattice iCE40
 set_option -maxfan 10000
+set_option -rw_check_on_ram 0
 set_option -disable_io_insertion 0
 set_option -pipe 1
 set_option -retiming 0
 set_option -update_models_cp 0
-set_option -fixgatedclocks 2
-set_option -fixgeneratedclocks 0
+set_option -fix_gated_and_generated_clocks 1
+set_option -run_prop_extract 1
 
 # NFilter
-set_option -popfeed 0
-set_option -constprop 0
-set_option -createhierarchy 0
+set_option -no_sequential_opt 0
+
+# timing_analyst_options
+set_option -reporting_filter {-from {0} -to {1}  -through {1} }
+set_option -reporting_output_srm 0
 
 # sequential_optimization_options
 set_option -symbolic_fsm_compiler 1
@@ -46,12 +57,15 @@ set_option -symbolic_fsm_compiler 1
 set_option -compiler_compatible 0
 set_option -resource_sharing 1
 
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#timing report file option
+set_option -reporting_filename "using_pll_syn.ta"
+
 #automatic place and route (vendor) options
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_format "edif"
-project -result_file ./using_pll_Implmnt/using_pll.edf
-project -log_file "./using_pll_Implmnt/using_pll.srr"
-impl -active using_pll_Implmnt
-project -run synthesis -clean
+project -result_file "using_pll_Implmnt/using_pll.edf"
+impl -active "using_pll_Implmnt"

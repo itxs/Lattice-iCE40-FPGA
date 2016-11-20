@@ -8,7 +8,7 @@ logic pll_clk;
 logic nrst;
 logic [10:0] cnt;
 assign nrst = !rst;
-assign led[1] = cnt[10];
+assign led[0] = cnt[10];
 
 //pll pll_inst(.REFERENCECLK(clk),
 //             .PLLOUTGLOBAL(pll_clk),

@@ -1,21 +1,19 @@
+sourcing C:\lscc\iCEcube2.2016.02\synpbase\lib\message_override.tcl
 Running in Lattice mode
 
-sourcing C:\lscc\iCEcube2.2016.02\synpbase\lib\message_override.tcl
-
-
-Starting:    C:\lscc\iCEcube2.2016.02\synpbase\bin64\mbin\synbatch.exe
+Starting:    C:\lscc\iCEcube2.2016.02\synpbase\bin64\mbin\synplify.exe
 Install:     C:\lscc\iCEcube2.2016.02\synpbase
 Hostname:    DESKTOP-ITXS
-Date:        Fri Nov 18 04:16:57 2016
+Date:        Sat Nov 19 00:38:20 2016
 Version:     K-2015.09L
 
-Arguments:   -product synplify_pro -batch using_pll_syn.prj
+Arguments:   -product synplify_pro using_pll_syn.prj
 ProductType: synplify_pro
 
 
 
 
-
+Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srr to C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\backup\using_pll.srr
 log file: "C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srr"
 Running: using_pll_Implmnt in foreground
 
@@ -30,7 +28,7 @@ Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwor
 
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:02s
+Run Time:0h:00m:01s
 
 Running: multi_srs_gen (Multi-srs Generator) on using_pll_syn|using_pll_Implmnt
 Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwork\using_pll_comp.srs to C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwork\using_pll_s.srs
@@ -46,11 +44,69 @@ Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_
 
 premap Completed
 Return Code: 0
+Run Time:0h:00m:01s
+Complete: Compile on using_pll_syn|using_pll_Implmnt
+
+Running: map (Map) on using_pll_syn|using_pll_Implmnt
+
+Running: fpga_mapper (Map & Optimize) on using_pll_syn|using_pll_Implmnt
+Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwork\using_pll_m.srm to C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srm
+
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:00s
+Complete: Map on using_pll_syn|using_pll_Implmnt
+Complete: Logic Synthesis on using_pll_syn|using_pll_Implmnt
+log file: "C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srr"
+Running: using_pll_Implmnt in foreground
+
+Running using_pll_syn|using_pll_Implmnt
+
+Running: compile (Compile) on using_pll_syn|using_pll_Implmnt
+
+Running: compile_flow (Compile Process) on using_pll_syn|using_pll_Implmnt
+
+Running: compiler (Compile Input) on using_pll_syn|using_pll_Implmnt
+compiler exited with errors
+
+Job: "compiler" terminated with error status: 2
+See log file: "C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synlog\using_pll_compiler.srr"
+Return Code: 2
+Run Time:0h:00m:01s
+log file: "C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srr"
+Running: using_pll_Implmnt in foreground
+
+Running using_pll_syn|using_pll_Implmnt
+
+Running: compile (Compile) on using_pll_syn|using_pll_Implmnt
+
+Running: compile_flow (Compile Process) on using_pll_syn|using_pll_Implmnt
+
+Running: compiler (Compile Input) on using_pll_syn|using_pll_Implmnt
+Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwork\using_pll_comp.srs to C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srs
+
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+Running: multi_srs_gen (Multi-srs Generator) on using_pll_syn|using_pll_Implmnt
+Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwork\using_pll_comp.srs to C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwork\using_pll_s.srs
+
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Complete: Compile Process on using_pll_syn|using_pll_Implmnt
+
+Running: premap (Pre-mapping) on using_pll_syn|using_pll_Implmnt
+Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.sap to C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwork\using_pll_s.sap
+Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.fse to C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwork\using_pll_s.fse
+
+premap Completed
+Return Code: 0
 Run Time:0h:00m:00s
 Complete: Compile on using_pll_syn|using_pll_Implmnt
 
 Running: map (Map) on using_pll_syn|using_pll_Implmnt
-License granted for 4 parallel jobs
 
 Running: fpga_mapper (Map & Optimize) on using_pll_syn|using_pll_Implmnt
 Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwork\using_pll_m.srm to C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srm
@@ -60,8 +116,30 @@ Return Code: 1
 Run Time:0h:00m:01s
 Complete: Map on using_pll_syn|using_pll_Implmnt
 Complete: Logic Synthesis on using_pll_syn|using_pll_Implmnt
+log file: "C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srr"
+Running: timing in foreground
 
+running timing analysis on C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srd
+
+Running: timing (Timing Analysis) on using_pll_syn|using_pll_Implmnt
+
+timing Completed with warnings
+Return Code: 1
+Run Time:0h:00m:00s
+log file: "C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srr"
+Running: timing in foreground
+
+running timing analysis on C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srd
+
+Running: timing (Timing Analysis) on using_pll_syn|using_pll_Implmnt
+
+timing Completed with warnings
+Return Code: 1
+Run Time:0h:00m:00s
+Opening object source file c:\embedded\lattice\examples\using_pll\source\top.sv
+Mouse stroke not recognized
+Mouse stroke not recognized
+Opening object source file c:\embedded\lattice\examples\using_pll\source\pll.v
+Opening object source file c:\lscc\icecube2.2016.02\synpbase\lib\generic\sb_ice40.v
+Note: Opening local project RTL file 'C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\using_pll.srs'
 exit status=0
-
-exit status=0
-

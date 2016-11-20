@@ -6,7 +6,7 @@ sourcing C:\lscc\iCEcube2.2016.02\synpbase\lib\message_override.tcl
 Starting:    C:\lscc\iCEcube2.2016.02\synpbase\bin64\mbin\synbatch.exe
 Install:     C:\lscc\iCEcube2.2016.02\synpbase
 Hostname:    DESKTOP-ITXS
-Date:        Fri Nov 18 03:52:12 2016
+Date:        Fri Nov 18 04:16:57 2016
 Version:     K-2015.09L
 
 Arguments:   -product synplify_pro -batch using_pll_syn.prj
@@ -30,7 +30,7 @@ Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwor
 
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:01s
+Run Time:0h:00m:02s
 
 Running: multi_srs_gen (Multi-srs Generator) on using_pll_syn|using_pll_Implmnt
 Copied C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwork\using_pll_comp.srs to C:\embedded\Lattice\examples\using_pll\using_pll\using_pll_Implmnt\synwork\using_pll_s.srs
