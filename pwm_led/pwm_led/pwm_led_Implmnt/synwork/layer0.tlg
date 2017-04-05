@@ -1,0 +1,5 @@
+Selecting top level module blinker
+@N: CG364 :"C:\embedded\Lattice\examples\pwm_led\pwm_led\source\top.sv":1:7:1:13|Synthesizing module blinker.
+
+@W: CL157 :"C:\embedded\Lattice\examples\pwm_led\pwm_led\source\top.sv":4:14:4:16|*Output led has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\embedded\Lattice\examples\pwm_led\pwm_led\source\top.sv":3:7:3:9|Input rst is unused.

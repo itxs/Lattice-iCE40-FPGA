@@ -1,0 +1,35 @@
+#### START OF AREA REPORT #####[
+
+Part:			ICE40UL640SWG16 (Lattice)
+
+-----------------------------------------------------------------------
+########   Utilization report for  Top level view:   blinker   ########
+=======================================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     11                 100 %                
+==================================================
+Total SEQUENTIAL ELEMENTS in the block blinker:	11 (28.95 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+LUTS       11                 100 %                
+CARRYS     10                 100 %                
+===================================================
+Total COMBINATIONAL LOGIC in the block blinker:	21 (55.26 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     4                  100 %                
+=================================================
+Total IO PADS in the block blinker:	4 (10.53 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+
